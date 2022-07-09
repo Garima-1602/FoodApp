@@ -4,6 +4,122 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".RegisterActivity"
+    android:background="@color/black">
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter Name"
+        android:textColorHint="#000000"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:inputType="text"
+        android:textSize="18sp"
+        android:background="@color/design_default_color_background" />
+
+    <EditText
+        android:id="@+id/etemailaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Email address"
+        android:textColorHint="#000000"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:inputType="textWebEmailAddress"
+        android:layout_below="@+id/etname"
+        android:textSize="18sp"
+        android:background="@color/design_default_color_background" />
+    <EditText
+        android:id="@+id/etemobilenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Mobile Number(10 digits)"
+        android:textColorHint="#000000"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:inputType="phone"
+        android:layout_below="@+id/etemailaddress"
+        android:textSize="18sp"
+        android:background="@color/design_default_color_background" />
+    <EditText
+        android:id="@+id/etaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter Delivery address"
+        android:textColorHint="#000000"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:inputType="text"
+        android:layout_below="@+id/etemobilenumber"
+        android:textSize="18sp"
+        android:background="@color/design_default_color_background" />
+    <EditText
+        android:id="@+id/etpswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Password"
+        android:textColorHint="#000000"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:inputType="textPassword"
+        android:layout_below="@+id/etaddress"
+        android:textSize="18sp"
+        android:background="@color/design_default_color_background" />
+    <EditText
+        android:id="@+id/etconfirmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Confirm Password"
+        android:textColorHint="#000000"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:inputType="textPassword"
+        android:layout_below="@+id/etpswd"
+        android:textSize="18sp"
+        android:background="@color/design_default_color_background" />
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etconfirmpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:padding="6dp"
+        android:text="Register"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+
+
 
 </RelativeLayout>
