@@ -3,4 +3,6 @@
     <string name="mobile_number">Mobile Number</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
+    <string name="next">Next</string>
+    <string name="mobilenumber_email">Enter Your registered mobile number and email below:</string>
 </resources>

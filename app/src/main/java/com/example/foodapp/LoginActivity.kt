@@ -34,5 +34,6 @@ class LoginActivity : AppCompatActivity() {
         {
             startActivity(Intent(this@LoginActivity,RegisterActivity::class.java))
         }
+        title="Log In"
     }
 }
