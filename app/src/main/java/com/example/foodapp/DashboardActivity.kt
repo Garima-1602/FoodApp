@@ -10,14 +10,10 @@ class DashboardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
         txtReceived=findViewById(R.id.txtReceived)
-        if(intent!=null)
-        {
-            val details = intent.getBundleExtra("details")
+
+
+        val details = intent.getBundleExtra("details")
             txtReceived.text= details.toString()
-        }
-        else
-        {
-            txtReceived.text="No data found!"
-        }
+
     }
 }
