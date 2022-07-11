@@ -41,11 +41,12 @@ class LoginActivity : AppCompatActivity() {
             //key-value pair
             //here key is mobile no and value is data which is retrieved from user
             //putString to  store value in bundle taken from user
+
             bundle.putString("Mobile No",etPhone.text.toString())
             bundle.putString("Password",etPassword.text.toString())
 
             //putExtra is to send the retrieve data from one activity to another
-            intent.putExtra("information",bundle)
+            intent.putExtra("details",bundle)
             //intent creation to connect it to another activity
             startActivity(Intent(this@LoginActivity,DashboardActivity::class.java))
 
