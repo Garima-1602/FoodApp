@@ -24,7 +24,7 @@ class RegisterActivity : AppCompatActivity() {
         etaddress=findViewById(R.id.etaddress)
         etpswd=findViewById(R.id.etpswd)
         etconfirmpassword=findViewById(R.id.etconfirmpassword)
-
+        btnNext=findViewById(R.id.btnNext)
         btnNext.setOnClickListener()
         {
             val intent= Intent(this@RegisterActivity,DashboardActivity::class.java)

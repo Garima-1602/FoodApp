@@ -28,11 +28,13 @@ class LoginActivity : AppCompatActivity() {
         txtForgot.setOnClickListener()
         {
             //start is to start next activity and intent to connect one activity to another
-            startActivity(Intent(this@LoginActivity,ForgotPasswordActivity::class.java))
+            val intent=Intent(this@LoginActivity,ForgotPasswordActivity::class.java)
+            startActivity(intent)
         }
         txtRegister.setOnClickListener()
         {
-            startActivity(Intent(this@LoginActivity,RegisterActivity::class.java))
+            val intent=Intent(this@LoginActivity,RegisterActivity::class.java)
+            startActivity(intent)
         }
         title="Log In"
         btnLogin.setOnClickListener()

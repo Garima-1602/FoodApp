@@ -16,6 +16,7 @@ class ForgotPasswordActivity : AppCompatActivity() {
         setContentView(R.layout.activity_forgot_password)
         etEmailadd=findViewById(R.id.etEmailadd)
         etePswd=findViewById(R.id.etePswd)
+        btnNext =findViewById(R.id.btnNext)
         btnNext.setOnClickListener()
         {
             val intent=Intent(this@ForgotPasswordActivity,DashboardActivity::class.java)
