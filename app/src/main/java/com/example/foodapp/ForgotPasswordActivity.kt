@@ -22,7 +22,7 @@ class ForgotPasswordActivity : AppCompatActivity() {
             val bundle=Bundle()
             bundle.putString("data","forgot")
             bundle.putString("Email",etEmailadd.text.toString())
-            bundle.putString("etePswd",etePswd.text.toString())
+            bundle.putString("Pswd",etePswd.text.toString())
             intent.putExtra("details",bundle)
             startActivity(intent)
 

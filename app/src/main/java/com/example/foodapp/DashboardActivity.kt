@@ -20,24 +20,24 @@ class DashboardActivity : AppCompatActivity() {
             val data= details?.getString("data")
             if(data=="login")
             {
-                val text="Email: ${details.getString("email")} \n" +
-                        "Password : ${details.getString("password")}"
+                val text="Email: ${details.getString("Email")} \n" +
+                        "Password : ${details.getString("Password")}"
                 txtReceived.text=text
             }
             if(data=="forgot")
             {
-                val text="Email: ${details.getString("email")} \n" +
-                        "Password : ${details.getString("password")}"
+                val text="Email: ${details.getString("Email")} \n" +
+                        "Password : ${details.getString("Pswd")}"
                 txtReceived.text=text
             }
             if(data=="register")
             {
-                val text="Name ${details.getString("name")}\n"+
-                        "Email: ${details.getString("email")} \n" +
-                        "Mobile No:  ${details.getString("mobileno")}\n" +
-                        "Address : ${details.getString("address")}\n" +
-                        "Password : ${details.getString("password")}" +
-                        "Confirm Password: ${details.getString("confirm password")}"
+                val text="Name ${details.getString("Name")}\n"+
+                        "Email: ${details.getString("Email")} \n" +
+                        "Mobile No:  ${details.getString("Mobile No")}\n" +
+                        "Address : ${details.getString("Address")}\n" +
+                        "Password : ${details.getString("Password")}" +
+                        "Confirm Password: ${details.getString("ConfirmPassword")}"
                 txtReceived.text=text
             }
 

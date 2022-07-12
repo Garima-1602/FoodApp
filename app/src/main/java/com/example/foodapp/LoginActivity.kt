@@ -43,7 +43,7 @@ class LoginActivity : AppCompatActivity() {
             //here key is mobile no and value is data which is retrieved from user
             //putString to  store value in bundle taken from user
             bundle.putString("data", "login")
-            bundle.putString("Enail",etEmail.text.toString())
+            bundle.putString("Email",etEmail.text.toString())
             bundle.putString("Password",etPassword.text.toString())
 
             //putExtra is to send the retrieve data from one activity to another
