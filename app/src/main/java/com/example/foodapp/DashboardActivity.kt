@@ -15,32 +15,31 @@ class DashboardActivity : AppCompatActivity() {
         if(intent!=null)
         {
             //to fetch details from intent we use getExtra
-            val details=intent.getBundleExtra("details") //take
-            //getting the value of data
-            val data= details?.getString("data")
-            if(data=="login")
-            {
-                val text="Email: ${details.getString("Email")} \n" +
-                        "Password : ${details.getString("Password")}"
-                txtReceived.text=text
-            }
-            if(data=="forgot")
-            {
-                val text="Email: ${details.getString("Email")} \n" +
-                        "Password : ${details.getString("Pswd")}"
-                txtReceived.text=text
-            }
-            if(data=="register")
-            {
-                val text="Name ${details.getString("Name")}\n"+
-                        "Email: ${details.getString("Email")} \n" +
-                        "Mobile No:  ${details.getString("Mobile No")}\n" +
-                        "Address : ${details.getString("Address")}\n" +
-                        "Password : ${details.getString("Password")}" +
-                        "Confirm Password: ${details.getString("ConfirmPassword")}"
-                txtReceived.text=text
-            }
 
+                    val details = intent.getBundleExtra("details") //take
+                    //getting the value of data
+            if(details!=null) {
+                    val data = details?.getString("data")
+                    if (data == "login") {
+                        val text = "Email: ${details.getString("Email")} \n" +
+                                "Password : ${details.getString("Password")}"
+                        txtReceived.text = text
+                    }
+                    if (data == "forgot") {
+                        val text = "Email: ${details.getString("Email")} \n" +
+                                "Password : ${details.getString("Pswd")}"
+                        txtReceived.text = text
+                    }
+                    if (data == "register") {
+                        val text = "Name ${details.getString("Name")}\n" +
+                                "Email: ${details.getString("Email")} \n" +
+                                "Mobile No:  ${details.getString("Mobile No")}\n" +
+                                "Address : ${details.getString("Address")}\n" +
+                                "Password : ${details.getString("Password")}" +
+                                "Confirm Password: ${details.getString("ConfirmPassword")}"
+                        txtReceived.text = text
+                    }
+                }
 
         }
         else
